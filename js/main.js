@@ -217,7 +217,7 @@ function ordenarPorNombre() {
 }
 
 /*
-ordenarPorNombre(): Al igual que la funcion anterior, creamos una variable para no modificar el array original, tambien vamos a utilizar el método sort, pero para esta funcion, comparamos usando el atributo precio de las frutas.
+ordenarPorPrecio(): Al igual que la funcion anterior, creamos una variable para no modificar el array original, tambien vamos a utilizar el método sort, pero para esta funcion, comparamos usando el atributo precio de las frutas.
 */
 function ordenarPorPrecio() {
   let frutasOrdenadas = frutas;
