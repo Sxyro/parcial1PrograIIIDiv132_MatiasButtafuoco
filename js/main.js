@@ -132,7 +132,7 @@ function agregarAlCarrito(id) {
 
 /* 
   mostrarCarrito(): Esta función es prácticamente idéntica en funcionamiento a mostrarFrutas, solo que acá definimos contenedorCarrito que es donde vamos a insertar el código HTML para poder mostrar en pantalla los seleccionados, nuevamente usamos foreach, recorremos la lista, imprimimos por cada elemento y finalmente lo mostramos en el DOM.
-  Además, incorporamos el contador y el total de carrito acá para que se actualice constantemente, ponemos un condicional, en caso de que el carrito este vacío, lo mostramos, y en caso de tener productos, especificamos la cantidad/monto.
+  Además, incorporamos el contador y el total de carrito acá para que se actualice constantemente, ponemos un condicional, en caso de que el carrito este vacío, lo mostramos, y en caso de tener productos, especificamos la cantidad/monto. A ultimo momento cree tambien la variable botonVaciarCarrito para agregarla fuera del contenedorCarrito, asi quedaba mas parecido a la imagen que pasaron.
 */ 
 
 function mostrarCarrito() {
@@ -145,6 +145,8 @@ function mostrarCarrito() {
           </li>`;
   });
   cartaCarrito += `</ul>`
+
+  let botonVaciarCarrito = "";
 
   if (carritoDeCompras.length > 0) {
     botonVaciarCarrito = `<button class="boton-vaciar" onclick='vaciarCarrito()'>Vaciar Carrito</button>`;
