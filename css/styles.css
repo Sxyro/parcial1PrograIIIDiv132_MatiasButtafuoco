@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #32940f;
+  color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+main {
+  display: inline-block;
+  padding: 20px;
+  gap: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+label {
+  font-size: 25px;
+}
+
+#barraBusqueda {
+  width: 200px;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid #b1a6a6b8;
+}
+
+#productos {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+}
+
+.card-fruta img {
+  width: 150px;
+  height: 125px;
+}
+
+#contenedorFrutas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card-fruta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #444;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+#contenedorCarrito {
+    background-color: #f3f3f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bloque-item {
+    display: flex;
+    gap: 200px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boton-agregar {
+    color: white;
+    background-color: green;
+    cursor: pointer;
+    border: none;
+    padding: 8px 12px;
+}
+
+.boton-eliminar {
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    border: none;
+    padding: 8px 12px;
+}
+
+.contenedorBotones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.boton-vaciar {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: red;
+    border: none;
+    padding: 8px 12px;
+    color: white;
+}
+
